@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: greeting-service
+greeting-service:
+  greeting: "Prod"
+  default-value: "do Mundo"
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
