@@ -1,11 +1,15 @@
-spring:
-  application:
-    name: greeting-service
-greeting-service:
-  greeting: "Hello"
-  default-value: "World"
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
+server:
+  port: 8085
+
+logging:
+  level:
+    root: info
+    org.springframework: info
+  pattern:
+  logback:
+    rollingpolicy:
+      max-file-size: 10MB
+      max-history: 5
+
+  file:
+    name: remove-movie.log
