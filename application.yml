@@ -7,5 +7,3 @@ logging:
     rollingpolicy:
       max-file-size: 10MB
       max-history: 5
-server:
-  port: 9089
