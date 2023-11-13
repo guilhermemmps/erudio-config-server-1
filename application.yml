@@ -3,11 +3,8 @@ logging:
     root: info
     org.springframework: info
   pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
   logback:
     rollingpolicy:
       max-file-size: 10MB
-      max-history: 5
-eureka:
-  client:
-    service-url:
-      defaultZone: http://eureka-server:8761/eureka/
+      max-history: 30
